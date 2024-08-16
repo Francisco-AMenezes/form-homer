@@ -1,42 +1,42 @@
-
 #add-form-container {
-    margin-top: 100px;
-  }
-  
-  #form-box {
-    padding: 50px;
-    margin-bottom: 50px;
-    border-radius: 4px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
-  }
-  
-  #add-form-container h2 {
-    color: red;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
-  
-  #add-form-container label {
-    font-weight: bold;
-  }
-  
-  #add-form-container input,
-  #add-form-container textarea {
-    border: 2px solid #ccc;
-    background-color: #f2f9fa;
-  }
-  
-  #form-box button {
-    max-height: 50px;
-    height: 100%;
-    width: 200px;
-    background-color: red;
-    color: white;
-    border: 1px solid transparent;
-    border-radius: 0;
-  }
+  margin-top: 100px;
+}
 
-  #phone, #whatsapp, #email {
-    max-width: 300px;
-  }
+#form-box {
+  padding: 50px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+}
+
+#add-form-container h2 {
+  color: red;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#add-form-container label {
+  font-weight: bold;
+}
+
+#add-form-container input,
+#add-form-container textarea {
+  border: 2px solid #ccc;
+  background-color: #f2f9fa;
+}
+
+#form-box button {
+  max-height: 50px;
+  height: 100%;
+  width: 200px;
+  background-color: red;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+#phone,
+#whatsapp {
+  max-width: 300px;
+}

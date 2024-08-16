@@ -32,7 +32,6 @@
                 class="form-control"
                 id="name"
                 name="name"
-                placeholder="Informe aqui o nome ou razão social do contratante..."
                 required
               />
             </div>
@@ -40,7 +39,6 @@
               <label for="document">CPF/CNPJ:</label>
               <input
                 type="text"
-                placeholder="___.___.___-__"
                 required
                 class="form-control"
                 name="document"
@@ -48,10 +46,9 @@
               />
             </div>
             <div class="form-group">
-              <label for="ie">Inscrição Estadual:</label>
+              <label for="ie">Inscrição Estadual (Opcional):</label>
               <input
                 type="text"
-                placeholder=""
                 class="form-control"
                 name="ie"
                 id="ie"
@@ -64,17 +61,17 @@
                 class="form-control"
                 id="addres"
                 name="addres"
-                placeholder="Ex: Avenida Olímpia Silva, 205"
+                required
               />
             </div>
             <div class="form-group">
               <label for="cep">CEP:</label>
               <input
                 type="text"
-                placeholder="Digite o CEP (EX: 12345-678)"
                 class="form-control"
                 name="cep"
                 id="cep"
+                required
               />
             </div>
             <div class="form-group">
@@ -84,7 +81,7 @@
                 class="form-control"
                 id="neighborhood"
                 name="neighborhood"
-                placeholder="Ex: Casa do Silvão"
+                required
               />
             </div>
             <div class="form-group">
@@ -94,12 +91,12 @@
                 class="form-control"
                 id="city"
                 name="city"
-                placeholder="Ex: Pulta que o Pariô"
+                required
               />
             </div>
             <div class="form-group">
               <label for="uf">UF:</label>
-              <select id="uf" name="uf" class="form-control">
+              <select id="uf" name="uf" class="form-control" required>
                 <option value="" disabled selected>Selecione</option>
                 <option value="AC">Acre (AC)</option>
                 <option value="AL">Alagoas (AL)</option>
@@ -131,13 +128,22 @@
               </select>
             </div>
             <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+            <div class="form-group">
               <label for="phone">Telefone:</label>
               <input
                 type="text"
                 class="form-control"
                 id="phone"
                 name="phone"
-                required
               />
             </div>
             <div class="form-group">
@@ -147,16 +153,6 @@
                 class="form-control"
                 id="whatsapp"
                 name="whatsapp"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">E-mail:</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="email"
                 required
               />
             </div>
