@@ -10,8 +10,65 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script src="./JS/scripts.js" defer></script>
+    <style>
+      #add-form-container {
+        margin-top: 100px;
+      }
+
+      #form-box {
+        padding: 50px;
+        margin-bottom: 50px;
+        border-radius: 4px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+      }
+
+      #add-form-container h2 {
+        color: red;
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 30px;
+      }
+
+      #add-form-container label {
+        font-weight: bold;
+      }
+
+      #add-form-container input,
+      #add-form-container textarea {
+        border: 2px solid #ccc;
+        background-color: #f2f9fa;
+      }
+
+      #form-box button {
+        max-height: 50px;
+        height: 100%;
+        width: 200px;
+        background-color: red;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: 0;
+      }
+
+      #phone,
+      #whatsapp {
+        max-width: 300px;
+      }
+
+      @media (max-width: 481px) {
+        #form-box {
+          padding: 25px;
+        }
+
+        #form-box h2 {
+          font-size: 1rem;
+          text-align: center;
+        }
+
+        #form-box button {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="add-form-container" class="container">
@@ -20,7 +77,7 @@
           <h1 class="text-center">Faça aqui o seu Pré Cadastro</h1>
         </div>
         <div id="form-box" class="col-md-12">
-          <form action="" method="">
+          <form action="https://getform.io/f/bzylpvwa" method="POST">
             <div class="form-group">
               <label for="name">Nome/Razão Social:</label>
               <input
@@ -43,12 +100,7 @@
             </div>
             <div class="form-group">
               <label for="ie">Inscrição Estadual (Opcional):</label>
-              <input
-                type="text"
-                class="form-control"
-                name="ie"
-                id="ie"
-              />
+              <input type="text" class="form-control" name="ie" id="ie" />
             </div>
             <div class="form-group">
               <label for="addres">Endereço:</label>
@@ -93,7 +145,6 @@
             <div class="form-group">
               <label for="uf">UF:</label>
               <select id="uf" name="uf" class="form-control" required>
-                <option value="" disabled selected>Selecione</option>
                 <option value="AC">Acre (AC)</option>
                 <option value="AL">Alagoas (AL)</option>
                 <option value="AP">Amapá (AP)</option>
@@ -135,12 +186,7 @@
             </div>
             <div class="form-group">
               <label for="phone">Telefone:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="phone"
-                name="phone"
-              />
+              <input type="text" class="form-control" id="phone" name="phone" />
             </div>
             <div class="form-group">
               <label for="whatsapp">WhatsApp:</label>
@@ -153,26 +199,9 @@
               />
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
           </form>
         </div>
       </div>
     </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
