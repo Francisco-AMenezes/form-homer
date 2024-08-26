@@ -1,16 +1,19 @@
 function sendWhatsappMessage(event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    // coleta os valores do formulário
+  // coleta os valores do formulário
 
-    const name = document.getElementById('name');
-    const documentNumber = document.getElementById('document')
-    const ie = document.getElementById('ie')
-    const addres = document.getElementById('addres')
-    const cep = document.getElementById('cep')
-    const neighborhood = document.getElementById('neighborhood')
-    const city = document.getElementById('city')
-    const uf = document.getElementById('uf')
-    const email = document.getElementById('email')
-    
+  const name = document.getElementById("name").value;
+  const documentNumber = document.getElementById("document").value;
+  const ie = document.getElementById("ie").value.trim();
+  const addres = document.getElementById("addres").value;
+  const cep = document.getElementById("cep").value;
+  const neighborhood = document.getElementById("neighborhood").value;
+  const city = document.getElementById("city").value;
+  const uf = document.getElementById("uf").value;
+  const email = document.getElementById("email").value;
+  const phone = document.getElementById("phone").value.trim();
+  const whatsapp = document.getElementById("whatsapp").value;
+
+  
 }
