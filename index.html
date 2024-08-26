@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pré Cadastro LandSpace</title>
+    <title>Pré-cadastro LAND Space</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -12,7 +12,7 @@
     />
     <style>
       #add-form-container {
-        margin-top: 100px;
+        margin-top: 10px;
       }
 
       #form-box {
@@ -49,12 +49,24 @@
         border-radius: 0;
       }
 
+      #uf {
+        max-width: 300px;
+      }
+
       #phone,
       #whatsapp {
         max-width: 300px;
       }
 
+      .form-check-label {
+        font-weight: 20;
+      }
+
       @media (max-width: 481px) {
+        #add-form-container h1 {
+          font-size: 20px;
+        }
+
         #form-box {
           padding: 25px;
         }
@@ -74,7 +86,7 @@
     <div id="add-form-container" class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-center">Faça aqui o seu Pré Cadastro</h1>
+          <h1 class="text-center">FAÇA AQUI SEU PRÉ-CADASTRO</h1>
         </div>
         <div id="form-box" class="col-md-12">
           <form action="https://getform.io/f/bzylpvwa" method="POST">
@@ -99,7 +111,7 @@
               />
             </div>
             <div class="form-group">
-              <label for="ie">Inscrição Estadual (Opcional):</label>
+              <label for="ie">Inscrição Estadual (opcional):</label>
               <input type="text" class="form-control" name="ie" id="ie" />
             </div>
             <div class="form-group">
@@ -107,8 +119,8 @@
               <input
                 type="text"
                 class="form-control"
-                id="addres"
-                name="addres"
+                id="address"
+                name="address"
                 required
               />
             </div>
@@ -145,6 +157,7 @@
             <div class="form-group">
               <label for="uf">UF:</label>
               <select id="uf" name="uf" class="form-control" required>
+                <option value=""></option>
                 <option value="AC">Acre (AC)</option>
                 <option value="AL">Alagoas (AL)</option>
                 <option value="AP">Amapá (AP)</option>
@@ -197,6 +210,125 @@
                 name="whatsapp"
                 required
               />
+            </div>
+            <div class="form-group">
+              <label for="modality">Modalidade:</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="modality1"
+                  name="modality"
+                  value="12H, com cozinha"
+                  required
+                />
+                <label class="form-check-label" for="modalidade1"
+                  >12h de duração, com cozinha</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="modality2"
+                  name="modality"
+                  value="3H, sem cozinha"
+                  required
+                />
+                <label class="form-check-label" for="modalidade2"
+                  >3h de duração, sem cozinha</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="modality1"
+                  name="modality"
+                  value="6H, com cozinha"
+                  required
+                />
+                <label class="form-check-label" for="modalidade3"
+                  >6h de duração, com cozinha</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="modality1"
+                  name="modality"
+                  value="8H musical, com cozinha"
+                  required
+                />
+                <label class="form-check-label" for="modalidade4"
+                  >8h musical, com cozinha</label
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="modality">Método de pagamento:</label>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="method1"
+                  name="payment-method"
+                  value="Dinheiro"
+                  required
+                />
+                <label class="form-check-label" for="method1">Dinheiro</label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="method2"
+                  name="payment-method"
+                  value="Cartão de crédito"
+                  required
+                />
+                <label class="form-check-label" for="method2"
+                  >Cartão de crédito</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="method3"
+                  name="payment-method"
+                  value="Cartão de débito"
+                  required
+                />
+                <label class="form-check-label" for="method3"
+                  >Cartão de débito</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="method4"
+                  name="payment-method"
+                  value="Pix/trasferência"
+                  required
+                />
+                <label class="form-check-label" for="method4"
+                  >Pix/transferência</label
+                >
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="method5"
+                  name="payment-method"
+                  value="A combinar"
+                  required
+                />
+                <label class="form-check-label" for="method5">A combinar</label>
+              </div>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
